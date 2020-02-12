@@ -36,5 +36,17 @@ export default (editor, config) => {
       <h1 class="heading">Insert title here</h1>
       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
       </section>`
-  });
+  }); 
+  
+  toAdd("file-upload") &&
+    bm.add("file-upload", {
+      label: "File Upload",
+      category: "Forms",
+      attributes: { class: "fa fa-upload" },
+      content: `<form action="/action_page.php">
+                  <label for="myfile">Select a file:</label>
+                  <input type="file" id="myfile" name="myfile"><br><br>
+                 <input type="submit">
+                </form> `
+    });
 }
